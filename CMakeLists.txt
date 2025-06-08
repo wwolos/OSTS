@@ -12,4 +12,5 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(SFML)
 
 add_executable(OSTS  src/main.cpp)
+target_include_directories(OSTS PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 target_link_libraries(OSTS  sfml-graphics sfml-window sfml-system)
